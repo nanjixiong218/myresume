@@ -1,0 +1,13 @@
+{
+  "name": "myself",
+  "version": "0.0.1",
+  "main": "app.js",
+  "private": true,
+  "dependencies": {
+    "ejs": "1.0.0",
+    "express": "~4.1.1",
+    "mongoose": "~2.8.0",
+    "thenjs": "^1.3.4",
+    "when": "^3.4.2"
+  }
+}
