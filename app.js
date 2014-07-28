@@ -40,11 +40,13 @@ app.get("/renderCallback",function(req,res){
         res.send(html);
     });
 });
-app.get("/", function (req, res) {
+app.get("/readbook", function (req, res) {
     Book.find({name:"深入浅出nodejs"},["name","describe"],function(err,docs){
         var books={books:docs};
         console.log(books);
         res.render("main",books);
     });
+app.get("/", function (req, res) {
 
+});
 });
