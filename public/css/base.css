@@ -4,8 +4,27 @@
 }
 body{
     color:#000;
+    background-color: #dcdcdc;
 }
 header{
     text-align: center;
 }
+.container.main {
+    border:2px solid black;
+    padding:20px;
+    background-color: lavenderblush;
+}
+p,dd{
+    text-indent: 32px;
+}
+dl,dd{
+    margin-bottom:20px;
+}
+dd{
+    border-bottom: 1px dashed #808080;
+}
+.myHeadImage{
+
+}
+
 
