@@ -5,7 +5,7 @@ var express = require("express");
 var path = require("path");
 
 var mongoose = require("mongoose");
-/*
+
 mongoose.connect("mongodb://127.0.0.1/myself",function(err){
     if(err){
         console.log("数据库连接失败！\n"+err);
@@ -20,17 +20,18 @@ var Book = new Schema({
     owner:{type:ObjectId},
     describe:{type:String}
 });
+
 mongoose.model("book",Book);
 var Book = mongoose.model("book");
 
-var book1 = new Book({name:"深入浅出nodejs",describe:"好书"});
-book1.save();
-*/
+//var book1 = new Book({name:"深入浅出nodejs",describe:"好书"});
+//book1.save();
 var app = express(function(){
 
 });
 
 app.use('/public',express.static(path.join(__dirname,'public')));
+app.use('/static',express.static(path.join(__dirname,'view/static/')));
 //console.log(app.locals);
 app.set("views",path.join(__dirname,"view"));
 app.set("view engine","html");//这是设置默认引擎扩展名的，也就是说如果不写扩展名，默认添加的扩展名
@@ -46,10 +47,7 @@ app.get("/renderCallback",function(req,res){
         res.send(html);
     });
 });
-app.get("/readbook", function (req, res) {
-    res.render("hello");
-});
-//设置相同的路由，后面都不会覆盖前面的
+
 app.get("/readbook", function (req, res) {
     Book.find({name:"深入浅出nodejs"},["name","describe"],function(err,docs){
         var books={books:docs};
@@ -57,3 +55,8 @@ app.get("/readbook", function (req, res) {
         res.render("bookDbTest",books);
     });
 });
+//设置相同的路由，后面都不会覆盖前面的
+app.get("/readbook", function (req, res) {
+    res.render("hello");
+});
+
