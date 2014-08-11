@@ -1,0 +1,15 @@
+* {
+    margin:0;
+    padding:0;
+}
+body{
+    color:#000;
+}
+header{
+    text-align: center;
+}
+#main{
+    border:2px solid #000000;
+    margin:50px 100px;
+    padding:20px;
+}
