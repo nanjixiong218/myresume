@@ -3,7 +3,7 @@
  */
 var express = require("express");
 var path = require("path");
-
+/*
 var mongoose = require("mongoose");
 
 mongoose.connect("mongodb://127.0.0.1/myself",function(err){
@@ -24,11 +24,10 @@ var Book = new Schema({
 mongoose.model("book",Book);
 var Book = mongoose.model("book");
 
-//var book1 = new Book({name:"深入浅出nodejs",describe:"好书"});
-//book1.save();
-var app = express(function(){
-
-});
+var book1 = new Book({name:"深入浅出nodejs",describe:"好书"});
+book1.save();
+*/
+var app = express();
 
 app.use('/public',express.static(path.join(__dirname,'public')));
 app.use('/static',express.static(path.join(__dirname,'view/static/')));
@@ -47,7 +46,7 @@ app.get("/renderCallback",function(req,res){
         res.send(html);
     });
 });
-
+/*
 app.get("/readbook", function (req, res) {
     Book.find({name:"深入浅出nodejs"},["name","describe"],function(err,docs){
         var books={books:docs};
@@ -55,6 +54,7 @@ app.get("/readbook", function (req, res) {
         res.render("bookDbTest",books);
     });
 });
+*/
 //设置相同的路由，后面都不会覆盖前面的
 app.get("/readbook", function (req, res) {
     res.render("hello");
