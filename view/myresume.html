@@ -13,9 +13,11 @@
 
         */
     </style>
-    <link href="/public/css/base.css" type="text/css" rel = "stylesheet"/>
-    <link href="/public/css/bookStyle.css" type="text/css" rel = "stylesheet"/>
+
+
     <link href="/public/lib/bootstrap-3.1.1-dist/css/bootstrap.min.css" type="text/css" rel = "stylesheet"/>
+    <link href="/public/css/bookStyle.css" type="text/css" rel = "stylesheet"/>
+    <link href="/public/css/base.css" type="text/css" rel = "stylesheet"/>
 </head>
 </body>
 <!--[if lt IE 7]>
@@ -23,7 +25,6 @@
     <a href="">换一个浏览器</a>或者<a href="">安装 Google Chrome Frame</a>
 </p>
 <![endif]-->
-<canvas id="mycanvas" ></canvas>
 <div id="normal">
     <header>
         <h1>我的简历</h1>
@@ -33,10 +34,10 @@
                 <div class="">
                     <div class="row">
                         <div class="col-lg-12">
-                            <h4>基础信息</h4>
+                            <h3>基础信息</h3>
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="row" id = "basicInfo">
                         <div class="col-lg-8">
                             <p class="">姓名：许会元</p>
                             <p> 男 | 25岁 （1989年3月6日） </p>
@@ -50,31 +51,32 @@
                             <img src="/public/image/myhead.png"/>
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="row" id="teachingInfo">
                         <div class="col-lg-12">
 
-                        <h4>教育情况</h4>
+                        <h3>教育情况</h3>
 
-                        <p><strong>2008-09--2012-06 &nbsp;&nbsp;&nbsp;&nbsp;
+                        <p>2008-09--2012-06 &nbsp;&nbsp;&nbsp;&nbsp;
                             济南大学 &nbsp;&nbsp;&nbsp;&nbsp; 计算机科学与技术
-                            &nbsp;&nbsp;&nbsp;&nbsp; 学士 </strong>
+                            &nbsp;&nbsp;&nbsp;&nbsp; 学士
                         </p>
-                        <p><strong>2012-09--2015-04 &nbsp;&nbsp;&nbsp;&nbsp;
+                        <p>2012-09--2015-04 &nbsp;&nbsp;&nbsp;&nbsp;
                             浙江理工 &nbsp;&nbsp;&nbsp;&nbsp; 计算机科学与技术
                             &nbsp;&nbsp;&nbsp;&nbsp; 硕士 &nbsp;&nbsp;&nbsp;&nbsp;
-                            实验室：企业智能实验室 </strong>
+                            实验室：企业智能实验室
                         </p>
                         </div>
                     </div>
-                    <div class="row">
+                    <hr/>
+                    <div class="row" id="techInfo">
                         <div class="col-lg-12">
-                        <h4>专业技能</h4>
+                        <h3>专业技能</h3>
                         <dl>
-                            <dt>语言</dt>
+                            <dt>编程语言</dt>
                             <dd>
                                 最熟悉javascript，其次java，再次c。c++,c#只是本科学过，学习正则的时候又学了点Perl。
                             </dd>
-                            <dt>后台</dt>
+                            <dt>后技术</dt>
                             <dd>
                                 熟悉j2ee相关知识，实习的时候用的struts1，其它用的都是公司内部封装的框架。
                                 自己看过点sturts2,hibernate,spring。但是没有项目经验，理解不深刻。
@@ -83,13 +85,13 @@
                                 相对j2ee更熟悉nodejs，熟练使用express框架和常用模块。自己编写过简单的类express的mvc框架，
                                 看过nodeclub源码，在其基础上搭建过社区平台。
                             </dd>
-                            <dt>数据库</dt>
+                            <dt>数据库相关</dt>
                             <dd>
                                 最熟悉DB2的pl/sql编程和相关操作。其次对mongodb的操作比较熟悉，也用过oracle，本科学习过sqlserver2000。
                                 本来想接触一下hadoop相关的知识，可惜一直没有时间，只是初略的看了一下，我女朋友实验室有很好的条件
                                 搭建hadoop，spark环境已经相关项目，我准备去稍微学习一下，并不会深入研究。
                             </dd>
-                            <dt>前端</dt>
+                            <dt>前端技术</dt>
                             <dd>
                                 不会切图，只做过一些图片的大小调整。我也不认为前端工程师就是切图，调页面加上偶尔写写特效。
                                 对html，css，javascript基础比较扎实，使用jquery，bootstrap，seajs做过单页面应用。
@@ -107,7 +109,7 @@
                             </dd>
                             <dt>设计模式与算法</dt>
                             <dd>短时间看过一些java和js的设计模式讲解和实现，理解不够透彻，对部分模式理解尚可，
-                                比如单例，mvc，工厂，观察者。
+                                比如单例，mvc，工厂，观察者，适配器。
                             </dd>
                             <dd>
                                 不擅长算法，可能是因为数学不够好，因此缺乏兴趣，一些简单的查找排序尚可，复杂些的分析算法性能就搞不定了。
@@ -126,14 +128,14 @@
                     </div>
                     </div>
                     <div class="row">
-                        <div class="col-lg-12">
-                        <h4>项目经验</h4>
+                        <div class="col-lg-12" id="project">
+                        <h3>项目经验</h3>
 
                         <dl>
                             <dt>实习项目</dt>
                             <dd>
                                 我的研究生阶段所在实验室并不是做科研类工作，而是实习性工作，
-                                所以可以说从研一开始就已经开始了实习期，目前已经有两年实习经验。
+                                所以可以说从研一就已经开始了实习期，目前已经有两年实习经验。
                             </dd>
                             <dd>
                                 在杭州州力数据科技有限公司实习，参与过烟草行业营销系统，经济运行系统，
@@ -210,7 +212,7 @@
                     </div>
 					<div class="row">
                         <div class="col-lg-12">
-				        	<h4>未来准备学习的技术 </h4>
+				        	<h3>未来准备学习的技术 </h3>
                             <p>
                                 首先要巩固已有知识，温故知新很重要。前端方面我想要主要想深入学习
                                 html5相关开发，学习一下hybrid技术，转向移动web的方向，貌似还有个native.js的解决方案。
@@ -240,7 +242,7 @@
 
                     <div class="row">
                         <div class="col-lg-12">
-                            <h4>个人总结：</h4>
+                            <h3>个人总结：</h3>
                          <p>
                              说实话，高中毕业选择专业之所以选择计算机是因为我喜欢电脑游戏，
                              所以真正学习计算机技术后，发现和我想的相去甚远。所以本科阶段对编程和计算机专业知识并不感兴趣，

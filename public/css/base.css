@@ -3,20 +3,30 @@
     padding:0;
 }
 html,body{
+    font-size: 20px;
     width:100%;
     color:#000;
-    background-color: #dcdcdc;
+    background: linear-gradient(-45deg,#b2dba1,#dca7a7);
+}
+h3 {
+    font-size: 28px;
+}
+h4::before{
+    content:"^^"
 }
 header{
     text-align: center;
 }
 .container.main {
-    border:2px solid black;
-    padding:20px;
+    border:2px double black;
+    padding:80px;
     background-color: lavenderblush;
 }
+.container.main{
+    background: linear-gradient(#fff,#e86a43);
+}
 p,dd{
-    text-indent: 32px;
+    text-indent: 40px;
 }
 dl,dd{
     margin-bottom:20px;
@@ -30,5 +40,14 @@ dd{
 canvas{
 
 }
+hr{
+    border-top: 2px solid;
+}
+#basicInfo {
+    font-weight:bold;
+}
 
 
+#teachingInfo{
+    font-weight:bold;
+}
