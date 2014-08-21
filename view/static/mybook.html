@@ -1,194 +1,356 @@
 <div class = "modal-header">
     <button type="button" class="close" data-dismiss="modal"></button>
-    <h4 class="modal-title">my book</h4>
+    <h3 class="modal-title">my book</h3>
 </div>
 <div class="modal-body">
-    <div class="book">
-        <div class="bookImg">
-            <img src="/public/image/node.jpg"/>
-        </div>
-        <div class="bookDescribe">
-            <div class="bookHeader">
-                <span>深入浅出nodejs</span><span class="">推荐指数：</span>
-            </div>
-            <div class="bookDescribe">
-                <p>
-                    国内nodejs布道者扑灵大神的力作，深入学习node必看书籍。
-                </p>
-            </div>
-        </div>
-
+<div class="book row">
+    <div class="bookImg col-lg-4">
+        <img src="/public/image/node.jpg"/>
     </div>
-    <div class="book">
-        <div class="bookImg">
-            <img src="/public/image/node.jpg"/>
+    <div class="bookDescribe col-lg-8">
+        <div class="bookHeader">
+            <span class="name">ppk谈javascript</span>
+            <div class="comment">推荐指数：
+                <span class="glyphicon glyphicon-star"></span>
+                <span class="glyphicon glyphicon-star"></span>
+                <span class="glyphicon glyphicon-star-empty"></span>
+                <span class="glyphicon glyphicon-star-empty"></span>
+                <span class="glyphicon glyphicon-star-empty"></span>
+            </div>
         </div>
         <div class="bookDescribe">
-            <div class="bookHeader">
-                <span>深入浅出nodejs</span><span class="">推荐指数：</span>
-            </div>
-            <div class="bookDescribe">
-                <p>
-                    国内nodejs布道者扑灵大神的力作，深入学习node必看书籍。
-                </p>
-            </div>
+            <span class="deep">阅读程度：读了两遍，不深入，作为js入门的过度书籍</span>
+            <p>
+                看的第一本前端，javascript相关书籍，作为js的入门学习，现在看来，虽然作者对兼容性很有研究，但是书籍内容太老，
+                跟不上现在的发展节奏，推荐指数不高。当然其中的很多思想还是很有价值的。
+            </p>
         </div>
-
     </div>
-    <div class="book">
-        <div class="bookImg">
+</div>
+
+<div class="book row">
+        <div class="bookImg col-lg-4">
             <img src="/public/image/node.jpg"/>
         </div>
-        <div class="bookDescribe">
+        <div class="bookDescribe col-lg-8">
             <div class="bookHeader">
-                <span>ppk谈javascript</span><span class="">推荐指数：</span>
+                <span class="name">javascript高级程序设计</span>
+                <div class="comment">推荐指数：
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                </div>
             </div>
             <div class="bookDescribe">
-                <span>阅读程度：</span><span>读了两遍，不深入，作为js入门的过度书籍</span>
-                <p>
-                    看的第一本前端，javascript相关书籍，作为js的入门学习，现在看来，虽然作者对兼容性很有研究，但是书籍内容太老，
-                    跟不上现在的发展节奏，推荐指数不高。当然其中的很多思想还是很有价值的。
-
-                </p>
-            </div>
-        </div>
-
-    </div>
-    <div class="book">
-        <div class="bookImg">
-            <img src="/public/image/node.jpg"/>
-        </div>
-        <div class="bookDescribe">
-            <div class="bookHeader">
-                <span>javascript高级程序设计</span><span class="">推荐指数：</span>
-            </div>
-            <div class="bookDescribe">
-                <span>阅读程度：</span><span>通览了一遍，核心部分看了不下十几遍</span>
+                <span class="deep">阅读程度：熟悉</span>
                 <p>
                     我看的第二本javascript书籍，通览了一遍，核心部分看了不下十几遍，比如数据类型，面向对象相关，作用域，闭包，ajax等。
                     部分内容使用到的时候看了多遍。
-                    javascript入门到进阶必看书籍，我始终没有看权威指南，
-                    对于javascript基础看这本书加上一些博客文章和ECMA标准已经够我消化了。
+                    javascript入门到进阶必看书籍。
                 </p>
             </div>
         </div>
-
     </div>
-    <div class="book">
-        <div class="bookImg">
+    <div class="book row">
+        <div class="bookImg col-lg-4">
             <img src="/public/image/node.jpg"/>
         </div>
-        <div class="bookDescribe">
+        <div class="bookDescribe col-lg-8">
             <div class="bookHeader">
-                <span>深入浅出nodejs</span><span class="">推荐指数：</span>
+                <span class="name">javascript框架设计</span>
+                <div class="comment">推荐指数：
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star-empty"></span>
+                </div>
             </div>
             <div class="bookDescribe">
-                <span>阅读程度：</span><span>深入读过两遍</span>
+                <span class="deep">阅读程度：初看</span>
                 <p>
-                    我看过的nodejs最好的书籍，国内nodejs布道者朴灵大神的力作，参加js大会时还有幸和朴灵大神合过影，
-                    深入学习node必看书籍。
+                    前端名人司徒正美力作，我通览了一遍，讲了很多知名框架的各方面实现对比，
+                    并加以比较，在提出他自己框架的解决方案。对浏览器兼容性，框架设计方面的讲的很详细，
+                    很深入。里面的很多内容我目前还难以消化，不建议新手阅读。
                 </p>
             </div>
         </div>
 
     </div>
-    <div class="book">
-        <div class="bookImg">
+    <div class="book row">
+        <div class="bookImg col-lg-4">
             <img src="/public/image/node.jpg"/>
         </div>
-        <div class="bookDescribe">
+        <div class="bookDescribe col-lg-8">
             <div class="bookHeader">
-                <span>nodejs实战</span><span class="">推荐指数：</span>
+                <span class="name">深入浅出nodejs</span>
+                <div class="comment">推荐指数：
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                </div>
             </div>
             <div class="bookDescribe">
-                <span>阅读程度：</span><span>只看了前几章</span>
+                <span class="deep">阅读程度：熟悉</span>
                 <p>
-                    作为node实践的良好教程，虽然只看了前几章，但是受益还是很大的，如果node和web开发基础够扎实，
-                    阅读起来很舒服。
+                    国内nodejs布道者朴灵大神的作品，深入学习node必看书籍。对nodejs的思想，运行机制都有深入的讲解，
+                    不偏重实践，更偏重理论，相对深入，为nodejs入门后进阶必读书籍。是我受益最大的一本书。
                 </p>
             </div>
         </div>
 
     </div>
-    <div class="book">
-        <div class="bookImg">
+
+    <div class="book row">
+        <div class="bookImg col-lg-4">
             <img src="/public/image/node.jpg"/>
         </div>
-        <div class="bookDescribe">
+        <div class="bookDescribe col-lg-8">
             <div class="bookHeader">
-                <span>深入浅出nodejs</span><span class="">推荐指数：</span>
+                <span class="name">nodejs实战</span>
+                <div class="comment">推荐指数：
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star-empty"></span>
+                </div>
             </div>
             <div class="bookDescribe">
+                <span class="deep">阅读程度：只看了1/4。</span>
                 <p>
-                    国内nodejs布道者扑灵大神的力作，深入学习node必看书籍。
+                   四位作者的四个项目讲解，nodejs实战的很好指引教程，
+                   我只看了第一个作者博客系统的实现部分。其余部分还没时间看。
                 </p>
             </div>
         </div>
 
     </div>
-    <div class="book">
-        <div class="bookImg">
+    <div class="book row">
+        <div class="bookImg col-lg-4">
             <img src="/public/image/node.jpg"/>
         </div>
-        <div class="bookDescribe">
+        <div class="bookDescribe col-lg-8">
             <div class="bookHeader">
-                <span>深入浅出nodejs</span><span class="">推荐指数：</span>
+                <span class="name">深入理解Bootstrap</span>
+                <div class="comment">推荐指数：
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                </div>
             </div>
             <div class="bookDescribe">
+                <span class="deep">阅读程度：看了实战，源码部分看到少</span>
                 <p>
-                    国内nodejs布道者扑灵大神的力作，深入学习node必看书籍。
+                    tom大叔对bootstrap3.0的讲解。既包括bootstrap的使用又包括源码分析，讲解的很细致。
                 </p>
             </div>
         </div>
 
     </div>
-    <div class="book">
-        <div class="bookImg">
+    <div class="book row">
+        <div class="bookImg col-lg-4">
             <img src="/public/image/node.jpg"/>
         </div>
-        <div class="bookDescribe">
+        <div class="bookDescribe col-lg-8">
             <div class="bookHeader">
-                <span>深入浅出nodejs</span><span class="">推荐指数：</span>
+                <span class="name">精通正则表达式</span>
+                <div class="comment">推荐指数：
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                </div>
             </div>
             <div class="bookDescribe">
+                <span class="deep">阅读程度：熟悉</span>
                 <p>
-                    国内nodejs布道者扑灵大神的力作，深入学习node必看书籍。
+                    经典图书，我认为，正则是所有程序员必学的一项技能。而这本书是学习正则的不二选择。
+                    前几章核心部分看了两遍，进阶的那章和后面各个语言的讲解还没看,
                 </p>
             </div>
         </div>
 
     </div>
-    <div class="book">
-        <div class="bookImg">
+    <div class="book row">
+        <div class="bookImg col-lg-4">
             <img src="/public/image/node.jpg"/>
         </div>
-        <div class="bookDescribe">
+        <div class="bookDescribe col-lg-8">
             <div class="bookHeader">
-                <span>深入浅出nodejs</span><span class="">推荐指数：</span>
+                <span class="name">软件方法(上)</span>
+                <div class="comment">推荐指数：
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star-empty"></span>
+                </div>
             </div>
             <div class="bookDescribe">
+                <span class="deep">阅读程度：看了两遍，但是缺乏实践</span>
                 <p>
-                    国内nodejs布道者扑灵大神的力作，深入学习node必看书籍。
+                    这本书是UMLChina创始人潘加宇的第一本书，目前只出了上册。里面对建模，业务，需求，设计，软件工程方面的内容
+                    有很独到的见解和独特的思维方法。读一遍书会让你有一种豁然开朗的感觉，但是实践起来会很艰难。
                 </p>
             </div>
         </div>
 
     </div>
-    <div class="book">
-        <div class="bookImg">
+    <div class="book row">
+        <div class="bookImg col-lg-4">
             <img src="/public/image/node.jpg"/>
         </div>
-        <div class="bookDescribe">
+        <div class="bookDescribe col-lg-8">
             <div class="bookHeader">
-                <span>深入浅出nodejs</span><span class="">推荐指数：</span>
+                <span class="name">css设计指南</span>
+                <div class="comment">推荐指数：
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star-empty"></span>
+                </div>
             </div>
             <div class="bookDescribe">
+                <span class="deep">阅读程度：熟悉</span>
                 <p>
-                    国内nodejs布道者扑灵大神的力作，深入学习node必看书籍。
+                    讲解css基础，以前没有系统学习过css的内容，感觉很容易，就那么点内容，所以css水平很菜。
+                    这本书算是第一本学习css的书。很不错，坚实了一下css的基础。
                 </p>
             </div>
         </div>
 
     </div>
+    <div class="book row">
+        <div class="bookImg col-lg-4">
+            <img src="/public/image/node.jpg"/>
+        </div>
+        <div class="bookDescribe col-lg-8">
+            <div class="bookHeader">
+                <span class="name">高性能html5</span>
+                <div class="comment">推荐指数：
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                </div>
+            </div>
+            <div class="bookDescribe">
+                <span class="deep">阅读程度：看了一遍</span>
+                <p>
+                    我很喜欢的团队奇舞团译的，不是纯讲性能的，实际上更是一本实战性书籍。
+                    讲了很多web开发最佳实践，经验之谈，当然少不了web开发中的性能问题。
+                </p>
+            </div>
+        </div>
+
+    </div>
+    <div class="book row">
+        <div class="bookImg col-lg-4">
+            <img src="/public/image/node.jpg"/>
+        </div>
+        <div class="bookDescribe col-lg-8">
+            <div class="bookHeader">
+                <span class="name">html5 css3 权威指南</span>
+                <div class="comment">推荐指数：
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star-empty"></span>
+                    <span class="glyphicon glyphicon-star-empty"></span>
+                </div>
+            </div>
+            <div class="bookDescribe">
+                <span class="deep">阅读程度：没看多少</span>
+                <p>
+                    考驾照学车的时候，在场地那边看了两天，感觉不深刻。HTML5和css3的范围太宽泛，书却太薄了，
+                    书中把大部分内容都罗列了出来，讲解的太浅显，可以当个技术目录资料看。
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="book row">
+    <div class="bookImg col-lg-4">
+        <img src="/public/image/node.jpg"/>
+    </div>
+    <div class="bookDescribe col-lg-8">
+        <div class="bookHeader">
+            <span class="name">java编程思想</span>
+            <div class="comment">推荐指数：
+                <span class="glyphicon glyphicon-star"></span>
+                <span class="glyphicon glyphicon-star"></span>
+                <span class="glyphicon glyphicon-star"></span>
+                <span class="glyphicon glyphicon-star"></span>
+                <span class="glyphicon glyphicon-star"></span>
+            </div>
+        </div>
+        <div class="bookDescribe">
+            <span class="deep">阅读程度：前一半比较熟悉</span>
+            <p>
+                虽然以前一直是后端，但是那时候不爱学习，所以后端的相关内容基本没看什么书，都是随便翻翻，搜搜，学学的，
+                java语言只看了这一本书是感觉很不错的。
+            </p>
+        </div>
+    </div>
+    </div>
+    <div class="book row">
+    <div class="bookImg col-lg-4">
+        <img src="/public/image/node.jpg"/>
+    </div>
+    <div class="bookDescribe col-lg-8">
+        <div class="bookHeader">
+            <span class="name">HTML5 Canvas核心技术</span>
+            <div class="comment">推荐指数：
+                <span class="glyphicon glyphicon-star"></span>
+                <span class="glyphicon glyphicon-star"></span>
+                <span class="glyphicon glyphicon-star"></span>
+                <span class="glyphicon glyphicon-star"></span>
+                <span class="glyphicon glyphicon-star"></span>
+            </div>
+        </div>
+        <div class="bookDescribe">
+            <span class="deep">阅读程度：正在看</span>
+            <p>
+               这一段时间对canvas编程很感兴趣，正在看这本书籍，感觉讲的很不错，有很多实践代码。
+                我也做了几个小程序娱乐娱乐。有个缺点就是代码没有注释，有的地方讲的不细致读起来有些费力。
+            </p>
+        </div>
+    </div>
+    </div>
+    <div class="book row">
+    <div class="bookImg col-lg-4">
+        <img src="/public/image/node.jpg"/>
+    </div>
+    <div class="bookDescribe col-lg-8">
+        <div class="bookHeader">
+            <span class="name">mongodb权威指南</span>
+            <div class="comment">推荐指数：
+                <span class="glyphicon glyphicon-star"></span>
+                <span class="glyphicon glyphicon-star"></span>
+                <span class="glyphicon glyphicon-star"></span>
+                <span class="glyphicon glyphicon-star"></span>
+                <span class="glyphicon glyphicon-star"></span>
+            </div>
+        </div>
+        <div class="bookDescribe">
+            <span class="deep">阅读程度：不是很熟，主要关注操作部分</span>
+            <p>
+                以前主要用DB2数据库，现在学习nodejs，用nosql的mongodb，这本书算是权威吧。
+                以前看DB2权威指南的时候，好难懂，这本书读起来比关系型数据的书籍好懂一些，
+                不知道为什么，可能是因为有关系型数据库的基础吧。
+
+            </p>
+        </div>
+    </div>
+</div>
 </div>
 <div class="modal-footer"></div>

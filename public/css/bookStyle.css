@@ -1,18 +1,28 @@
 .book{
-    padding:2px 5px 5px 5px;
-    height:300px;
+    padding:2px 5px 20px 5px;
+    font-size:16px;
     overflow: hidden;
     border-bottom: 1px dashed #808080;
-}
-.bookImg{
-    float:left;
-    width:200px;
-    height:260px;
-    padding-right:20px;
-    border-right:1px solid darkgray;
-
 }
 .bookImg img{
     width:100%;
     height:100%;
+    padding-right:20px;
+    border-right:1px solid darkgray;
+}
+.book .comment{
+    font-size: 12px;
+    float:right;
+}
+.book .bookHeader{
+    height:32px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #808080;
+}
+.bookDescribe .deep{
+    font-size: 12px;
+    font-weight: bold;
+}
+.bookDescribe .name{
+    font-weight: bolder;
 }
